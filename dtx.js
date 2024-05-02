@@ -1,6 +1,6 @@
 function minDate(list)
 {
-  var result = list[0]
+  let result = list[0]
   for(i=1; i < list.length; i++)
   {
     if (list[i] < result)
@@ -13,7 +13,7 @@ function minDate(list)
 
 function maxDate(list)
 {
-  var result = list[0]
+  let result = list[0]
   for(i=1; i < list.length; i++)
   {
     if (list[i] > result)
@@ -35,8 +35,8 @@ function toDate(dateString, sep='/')
 
 function dateRange(start, end)
 {
-  var result = [];
-  var cur = start;
+  let result = [];
+  let cur = start;
   while (cur <= end)
   {
     result.push(new Date(cur));
